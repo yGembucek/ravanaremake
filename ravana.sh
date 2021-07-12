@@ -199,6 +199,7 @@ hidden(){
 hidden
 #možnosti zobrazení pro webové stránky ...
 
+
 printf "${p}[${g}01${p}]${w} Facebook     ${p}[${g}11${p}]${w} Netflix\n"
 printf "${p}[${g}02${p}]${w} Instagram    ${p}[${g}12${p}]${w} Twitter\n"
 printf "${p}[${g}03${p}]${w} Snapchat     ${p}[${g}13${p}]${w} Dropbox\n"
@@ -208,7 +209,7 @@ printf "${p}[${g}06${p}]${w} Paypal       ${p}[${g}16${p}]${w} Origin\n"
 printf "${p}[${g}07${p}]${w} Spotify      ${p}[${g}17${p}]${w} Ebay\n"
 printf "${p}[${g}08${p}]${w} Microsoft    ${p}[${g}18${p}]${w} Pinterest\n"
 printf "${p}[${g}09${p}]${w} Linkedin     ${p}[${g}19${p}]${w} Yahoo\n"
-printf "${p}[${g}10${p}]${w} Adobe
+printf "${p}[${g}10${p}]${w} Adobe        ${p}[${g}20${p}]${w} About me\n"
 echo " "
 echo -ne "${y}[${p}~${y}] ${r}Vyberte možnosti:: "
 read optn #Čtení pro volbu uživatele ..
@@ -301,6 +302,10 @@ case $optn in
                 echo -ne "${w}[${g}+${w}] ${y} Startuji yahoo server"
 		server yahoo;;
 
+20)
+		echo " "
+                echo -ne "${w}[${g}+${w}] ${y}  Please wait"
+		about_me;;
 	*)
 		echo " "
                 echo -ne "${w}[${r}!${w}] ${y} Neplatná možnost";;
